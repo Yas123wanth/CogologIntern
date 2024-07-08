@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <link rel="stylesheet" href="clonepro.css"> 
+     <style>
+
+            body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* Container styling */
+.container {
+    background-color: rgb(13, 69, 118); /* White background for the container */
+    padding: 2px; /* Padding for spacing */
+}
+
+/* Navigation styling */
+nav {
+     display: flex; 
+    justify-content: flex-start;
+    align-items: center;  
+    text-align: left;
+    height: 40px; 
+    padding: auto;
+    margin-left: 80px;
+}
+
+/* Link styling */
+nav a {
+    color: white; /* Dark text color for contrast */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px; /* Space between links */
+    font-size: 16px; /* Font size */
+ 
+}
+
+nav a:hover {
+    color: black; /* Change color on hover for interactivity */
+}
+
+/* Specific styling for the first link to differentiate it */
+nav a:first-of-type {
+    margin-left: 4px;
+    margin-right: 0; /* No margin for the first link */
+}
+
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .image-container {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image-container .image-caption {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #00aaff;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: auto;
+        }
+        .text-content {
+            flex: 1;
+            max-width: 600px;
+            padding-right: 20px;
+            text-align: justify;
+            margin-top: 30px;
+        }
+        .text-content h3 {
+            color: #00aaff;
+        }
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 10px;
+            }
+            .text-content, .image-container {
+                padding: 0;
+                max-width: none;
+            }
+        }
+
+     </style>
+</head>
+<body>
+   
+  
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="file.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="clone.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Company &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <a href="vision-mission.html">Vision and Mission</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Healthcare.html" >Products &#9662;</a>
+               
+            </div>
+          
+            <a href="Contact-Us.html">Contact Us</a>
+        </div>
+        <div class="auth">
+            <a href="loginform.html" class="auth-btn">Sign-In</a>
+            <a href="Franchise-login.html" class="auth-btn">Sign-Up</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                    <a href="clone.html">Home / <a href="about-us.html">About Us</a></a></li>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content-wrapper">
+        <div class="text-content">
+            <h3>About Car-Rental</h3>
+            <p> Car Rentals offers a seamless and reliable solution for your transportation needs. Whether you're traveling for business or leisure,
+                 our diverse fleet of vehicles ensures that you find the perfect ride. From compact cars for city exploration to spacious SUVs for family 
+                 adventures, we cater to every preference and occasion. With a commitment to quality service and customer satisfaction, Riwaglo 
+                 Car Rentals strives to make your journey comfortable and memorable. Experience convenience and affordability with our flexible rental plans and straightforward booking process.
+                 Discover the freedom of mobility with Riwaglo Car Rentals today</p>
+        </div>
+    </div>
+  
+
+
+
+    
+   
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="file.png" alt="Logo" class="footer-logo">
+                <p style="color: white;">Call</p>
+                <p class="contact-info">+91 93533 98181</p>
+                <p style="color: white;">Write a mail</p>
+                <p class="contact-info">info@carental.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Rental Policies</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Track Your Booking</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Insurance Information</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p style="color: white;">Shop No 1, 3rd Floor, Nithin Complex Sapthagiri Circle, Anantapur Andhra Pradesh - 515 001</p>
+                <h3>Subscribe to our newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" id="email" placeholder="Please enter your mail ID">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook_icon.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter_icon.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="instagram_icon.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                </div>
+                <h3>Mobile App</h3>
+                <div class="mobile-app-links">
+                    <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                    <a href="#"><img src="appstore.png" alt="App Store"></a>
+                </div>
+        </div>
+       
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 CAR-RENTAL PRIVATE LIMITED</p>
+    </div>
+
+</body>
+</html> 

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clonepro.css">
+</head>
+<style>
+    body {
+    overflow-x: hidden; /* Remove horizontal scroll */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+.flex-container, .row, .content-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* Adjust these values to ensure no extra space */
+}
+
+.footer {
+    margin-top: 0;
+    padding-top: 0;
+    /* Adjust to prevent pushing content beyond viewport */
+}
+
+/* Example adjustments, tailor as needed */
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        height: 40px;
+        padding: auto;
+        margin-left: 80px;
+    }
+
+    /* Link styling */
+    nav a {
+        color: #17dc0d;
+        /* Dark text color for contrast */
+        text-decoration: none;
+        /* Remove underline from links */
+        margin-right: 10px;
+        /* Space between links */
+        font-size: 16px;
+        /* Font size */
+    }
+
+    nav a:hover {
+        color: black;
+        /* Change color on hover for interactivity */
+    }
+
+    /* Specific styling for the first link to differentiate it */
+    nav a:first-of-type {
+        margin-left: 4px;
+        margin-right: 0;
+        /* No margin for the first link */
+    }
+
+    
+    
+    .content-wrapper {
+        margin-top: 20px;
+        /* Space between nav and content */
+         margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 8px;
+        /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Add subtle box shadow for lighting effect */
+    }
+
+
+    /* Image container styling */
+    .image-container {
+        text-align: center;
+        /* Center the image */
+        margin-bottom: 20px;
+        /* Space between image and text content */
+    }
+
+    .image-container img {
+        max-width: 100%;
+        /* Ensure the image fits within its container */
+        height: 300px;
+        /* Maintain the aspect ratio */
+        border-radius: 8px;
+        width: 1500px;
+    }
+
+
+    /* Row styling */
+    .row {
+        display: flex;
+        /* Use flexbox to arrange columns in a row */
+        justify-content: space-between;
+        /* Space between columns */
+        gap: 20px;
+        /* Gap between columns */
+        margin-top: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+        /* Space between nav and content */
+    }
+
+    /* Column styling */
+    .column {
+        flex: 1;
+        /* Allow columns to take up equal space */
+        background-color: #f9f9f9;
+        /* Light background for columns */
+        border: 1px solid #6aa84f;
+        /* Green border */
+        border-radius: 8px;
+        /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Add subtle box shadow for lighting effect */
+        overflow: hidden;
+        /* Prevent overflow */
+        padding: 20px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 0px); /* Adjusted width to account for margins */  
+        padding-bottom: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 20px;
+    }
+
+    .flex-item {
+        flex: 0 0 22%;
+        /* 22% width for 4 items per row with some space */
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .flex-item img {
+        max-width: 100%;
+        height: 400px; /* Set a fixed height for a vertically rectangular shape */
+        border-radius: 8px;
+        display: block;
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the container */
+    }
+
+    .flex-wrapper {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .contact-form, .contact-info1 {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        .contact-form h2, .contact-info1 h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contact-form input, .contact-form select, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #0a6d8e;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #1853a1;
+        }
+
+        .contact-info1 p {
+            margin: 10px 0;
+        }
+
+        .contact-info1 a {
+            color: #0d50ae;
+            text-decoration: none;
+        }
+
+        .contact-info1 .map {
+            margin-top: 20px;
+        }
+
+        .contact-info1 .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form, .contact-info1 {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="file.png" alt="Car Logo">
+        </div>
+        <div class="menu">
+            <a href="clone.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Company &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <a href="vision-mission.html">Vision and Mission</a>
+              
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Healthcare.html">Products &#9662;</a>
+            </div>
+            
+           
+            <a href="Contact-Us.html">Contact Us</a>
+        </div>
+        <div class="auth">
+            <a href="loginform.html" class="auth-btn">Sign-In</a>
+            <a href="Franchise-login.html" class="auth-btn">Sign-Up</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="clone.html" style="color: #fff;">Home / </a><p style="color: #f9f9f9;">Contact-Us </p>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="contact-wrapper">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="sumbit_form.php" method="post" enctype="multipart/form-data">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                
+                <label for="mobile">Mobile No</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile" required>
+                
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="pincode">PIN Code</label>
+                <input type="text" id="pincode" name="pincode" placeholder="PinCode" required>
+                
+                <label for="district">District</label>
+                <select id="district" name="district" required>
+                    <option value="">Select District</option>
+                    <option value="">Anantapur</option>
+                    <option value="">Chitoor</option>
+                    <option value="">Guntur</option>
+                    <option value="">East Godavari</option>
+                    <option value="">Krishna</option>
+                    
+                </select>
+                
+                <label for="city">City</label>
+                <select id="city" name="city" required>
+                    <option value="">Select City</option>
+                    <option value="">Machilipatnam</option>
+                    <option value="">Vuyyuru</option>
+                    <option value="">Barsana</option>
+                    <option value="">Vijayawada</option>
+                </select>
+                
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                    <option value="">Andhra Pradesh</option>
+                    <option value="">Karnataka</option>
+                    <option value="">Goa</option>
+                    
+
+                    
+                </select>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                
+                <label for="file">File input</label>
+                <input type="file" id="file" name="file">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-info1">
+            <h2>Get in Touch</h2>
+            <p>Winmarg Business Private Limited.,</p>
+            <p>Shop No 1, 3rd Floor Nithin Complex, Sapthagiri Circle, Anantapur, Andhra Pradesh-515 001</p>
+            <p><a href="mailto:info@mywinmarg.com">info@carrental.com</a></p>
+            <p><a href="http://www.mywinmarg.com" target="_blank">www.carrental.com</a></p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3377776408174!2d77.5967689153876!3d14.683128989737213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb64ddbc1e59e4f%3A0x74b66f7df0f9f8a1!2sNithin%20Complex!5e0!3m2!1sen!2sin!4v1599293544382!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="file.png" alt=" Logo" class="footer-logo">
+                <p>Call</p>
+                <p class="contact-info" style="color: #f6f7f9;">+91 93533 98181</p>
+                <p>Write a mail</p>
+                <p class="contact-info" style="color: #eeeff0;">info@carrental.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Rental Policies</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Track Your Booking</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Insurance Information</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Shop No 1, 3rd Floor, Nithin Complex Sapthagiri Circle, Anantapur Andhra Pradesh - 515 001</p>
+                <h3>Subscribe to our newsletter</h3>
+                <form id="newsletter-form"  action="submit_email.php" method="post">
+                    <input type="email" id="email" placeholder="Please enter your mail ID">
+                    <button type="submit" style="color: #1853a1;">Submit</button>
+                </form>
+
+                
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook_icon.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter_icon.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="instagram_icon.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                </div>
+                <h3>Mobile App</h3>
+                <div class="mobile-app-links">
+                    <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                    <a href="#"><img src="appstore.png" alt="App Store"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 CAR RENTAL PRIVATE LIMITED</p>
+        </div>
+    </div>
+</body>
+
+</html>

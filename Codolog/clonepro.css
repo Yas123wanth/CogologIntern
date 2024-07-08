@@ -1,0 +1,612 @@
+ .body {
+            font-family: Arial, sans-serif;
+         
+
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background-color: #4B3B47;
+            color: white;
+            padding-top: 0.2px;
+            padding-bottom: 0.2px;
+            text-align: center;
+        }
+        .container
+        {
+            background-color: #6A6262;
+            text-align: left;
+            
+        }
+
+/* Navbar styles */
+.navbar {
+    background-color: #483D3F;
+    box-shadow: gray;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+
+.logo img {
+    height: 60px ;
+    width: 300%;
+    color: #050101;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation menu styles */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+   
+  
+}
+
+.menu a, .dropdown .dropbtn {
+    color: #F4EBD9;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis when text overflows the container */
+    transition: background-color 0.3s;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Auth button styles */
+.auth {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-btn {
+    background-color:  rgb(12, 117, 158);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: rgb(12, 117, 158);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .auth {
+        margin-top: 10px;
+    }
+}
+
+        
+        
+
+
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-height: 300px;
+            /*Adjusted maximum height for the first slideshow */
+
+
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%; /* Ensures the image covers the slide area */
+            object-fit: cover;
+        }
+
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .nav-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px 20px;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+        .nav-button.left {
+            position: absolute;
+            left: 10px;
+        }
+
+        .nav-button.right {
+            position: absolute;
+            right: 10px;
+        }
+
+        .categories-header {
+            text-align: center;
+        }
+
+        .additional-content-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .content-slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .content-slide {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+        }
+
+        .content-slide img {
+            width: 100%;
+            max-height: 200px;
+            /* Reduced height for the content slides */
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .about-us-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .about-us-image {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-us-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-us-content {
+            flex: 2;
+        }
+
+        /* .new-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0; /* Removed padding 
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .new-section .slideshow-container {
+            width: 100%; /* Decreased width of the sliding window 
+            max-height: 300px; /* Adjusted maximum height for the new section slideshow 
+            max-width: 1200px;
+            margin: 0px auto;
+            overflow: hidden;
+            
+            
+        }
+        .new-section .image-container {
+            width: 40%;
+            padding-left: 20px;
+
+        }
+        .new-section .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 0px auto;
+        }
+
+       
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;  
+        }  */
+
+
+        .new-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0;
+            /* Removed padding */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .new-section .slideshow-container {
+            width: 70%;
+            /* Increased width of the sliding container */
+            max-height: 300px;
+            /* Adjusted maximum height for the new section slideshow */
+            max-width: 1200px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .new-section .image-container {
+            width: 39%;
+            /* Adjusted width to match the left image size */
+            padding-left: 20px;
+            margin: 0px auto;
+
+        }
+
+        .new-section .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+
+
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0px auto;
+            /* padding: 20px; */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            height: 300px;
+            /* Set a consistent height */
+        }
+
+        .left-image {
+            flex: 1;
+            padding-right: 20px;
+            height: 100%;
+            /* Match parent div height */
+        }
+
+        .left-image img {
+            width: 100%;
+            height: 100%;
+            /* Match parent div height */
+            object-fit: cover;
+            /* Ensures image covers the div while maintaining aspect ratio */
+            border-radius: 10px;
+        }
+
+        .slideshow-container {
+            flex: 2;
+            position: relative;
+            max-height: 100%;
+            /* Ensure it matches parent height */
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .image-container1 {
+            display: flex;
+            /* Enables flexbox layout */
+            justify-content: center;
+            /* Distributes items with space between them */
+            align-items: center;
+            /* Centers items vertically */
+            gap: 10px;
+            /* Optional: adds space between items */
+            margin: 10px auto;
+            /* Centers the container and adds margin */
+        }
+
+        .image-wrapper {
+            background-color: #f0f0f0;
+            /* Light gray background for the wrapper */
+            border-radius: 8px;
+            /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for 3D effect */
+            overflow: hidden;
+            /* Ensures the image doesn't overflow its container */
+            margin-left: 2px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            /* Makes the image responsive */
+            max-width: 300px;
+            /* Limits the maximum width of the image */
+            height: 200px;
+            /* Sets a specific height for the images */
+            object-fit: cover;
+            /* Ensures the image covers the specified dimensions */
+            border-radius: 8px;
+            /* Rounded corners for images */
+        }
+
+        .news-ticker {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            border: solid  rgb(12, 117, 158);
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        /* .news-heading {
+            background-color: #6aa84f;
+            color: white;
+            border-radius: 8px;
+            /* padding: 7px 9px;
+            margin-right: 20px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        } */
+        .news-heading {
+            background-color:  rgb(13, 69, 118);;
+            color: white;
+            border-radius: 8px;
+            padding: 3px 2px;
+            padding-top: 1px;
+            padding-bottom:1px;
+            text-align: center; /* Center the text */
+            display: inline-block; /* Ensure it behaves like a button */
+            cursor: pointer; /* Change cursor to pointer */
+            font-size: 16px; /* Adjust font size */
+            font-weight: bold; /* Make text bold */
+            text-decoration: none; /* Remove underline if it's a link */
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+        
+        /* Hover effect */
+        .news-heading:hover {
+            background-color:  rgb(13, 69, 118);; /* Darken the background on hover */
+        }
+        
+        .news-marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            flex: 1;
+        }
+
+        .news-marquee p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .footer {
+            /* background-color: #f0f5f1; */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            background-color:  #77685D;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .footer-logo {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .footer-section form {
+                flex-direction: column;
+            }
+        }
+
+        .contact-info {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 2px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+       
+        .footer-section p {
+            color: white;
+        }
+
+        #newsletter-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #newsletter-form input[type="email"] {
+            padding: 5px;
+            border: 1px solid  rgb(13, 69, 118);;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        #newsletter-form button {
+            padding: 5px 10px;
+            background-color:  rgb(232, 235, 238);;
+            color:  rgb(13, 69, 118);;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #newsletter-form button:hover {
+            background-color: rgb(222, 229, 234);;
+        }
+
+        .social-icons img,
+        .mobile-app-links img {
+            max-width: 30px;
+            margin: 5px;
+        }
+
+        .footer-bottom {
+     
+            padding: 0px 0;
+            color: #050101;
+            text-align: center;
+            
+        }

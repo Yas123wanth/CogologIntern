@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clonepro.css">
+    <style>
+
+        body
+           {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+           }
+
+        .login-box {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: calc(100% - 16px);
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .sign-in-btn {
+            background-color: #0e53a8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-logo {
+            height: 50px;
+        }
+
+        .contact-info {
+            margin: 5px 0;
+        }
+
+      
+
+        #newsletter-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #newsletter-form input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        #newsletter-form button {
+            background-color: #044289;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .label
+        {
+            color: #fff;
+        }
+        
+    </style>
+</head>
+
+<body>
+   
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="file.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="clone.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Company &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <a href="vision-mission.html">Vision and Mission</a>
+              
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Healthcare.html">Products &#9662;</a>
+            </div>
+            
+           
+            <a href="Contact-Us.html">Contact Us</a>
+        </div>
+        <div class="auth">
+            <a href="loginform.html" class="auth-btn">Sign-In</a>
+            <a href="Franchise-login.html" class="auth-btn">Sign-Up</a>
+        </div>
+    </div>
+
+    <div class="login-box">
+        <h2>WSF Login</h2>
+        <form action="login.php" method="POST">
+            <div class="input-group">
+                <label for="wsf-code">Car Code</label>
+                <input type="text" id="car-code" name="car-code">
+            </div>
+            <div class="input-group">
+                <label for="wsf-user-id">Car User ID</label>
+                <input type="text" id="wsf-user-id" name="wsf-user-id">
+            </div>
+            <div class="input-group">
+                <label for="user-id">User ID</label>
+                <input type="text" id="user-id" name="user-id">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="sign-in-btn">Sign In</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="file.png" alt="Logo" class="footer-logo">
+                <p>Call</p>
+                <p class="contact-info">+91 93533 98181</p>
+                <p>Write a mail</p>
+                <p class="contact-info">info@carrental.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Rental Policies</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Track Your Booking</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Insurance Information</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Shop No 1, 3rd Floor, Nithin Complex Sapthagiri Circle, Anantapur Andhra Pradesh - 515 001</p>
+                <h3>Subscribe to our newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" id="email" placeholder="Please enter your mail ID">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook_icon.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter_icon.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="instagram_icon.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                </div>
+                <h3>Mobile App</h3>
+                <div class="mobile-app-links">
+                    <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                    <a href="#"><img src="appstore.png" alt="App Store"></a>
+                </div>
+        </div>
+       
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 WINMARG BUSINESS PRIVATE LIMITED</p>
+    </div>
+
+            
+</body>
+
+</html>

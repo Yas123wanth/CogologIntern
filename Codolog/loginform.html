@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="clonepro.css">
+    <style>
+
+          body
+           {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px 50px;
+        }
+
+        .login-form {
+            flex: 1 1 45%;
+            margin: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form h2 {
+            margin-bottom: 10px;
+        }
+
+        .login-form p {
+            margin: 5px 0;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="file.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="clone.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Company &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <a href="vision-mission.html">Vision and Mission</a>
+              
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Healthcare.html">Products &#9662;</a>
+            </div>
+            
+           
+            <a href="Contact-Us.html">Contact Us</a>
+        </div>
+        <div class="auth">
+            <a href="loginform.html" class="auth-btn">Sign-In</a>
+            <a href="Franchise-login.html" class="auth-btn">Sign-Up</a>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="login-form">
+            <h2>Distributor Login</h2>
+            <form action="process_distributor_login.php" method="POST">
+                <label for="iba-id">IBA ID:</label>
+                <input type="text" id="iba-id" name="iba-id" required>
+                <label for="iba-password">Password:</label>
+                <input type="password" id="iba-password" name="iba-password" required>
+                <p><a href="forgot_password.php">Forgot password?</a></p>
+                <button class="auth-btn" type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="login-form">
+            <h2>Customer Registration</h2>
+            <!-- Customer Registration Form -->
+            <form action="register_customer.php" method="POST">
+                <label for="customer-id">Customer ID:</label>
+                <input type="text" id="customer-id" name="customer-id" required>
+                <label for="customer-password">Password:</label>
+                <input type="password" id="customer-password" name="customer-password" required>
+                <p><a href="forgot_password.php">Forgot password?</a></p>
+                <button class="auth-btn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="file.png" alt="Logo" class="footer-logo">
+                <p style="color: white;">Call</p>
+                <p class="contact-info">+91 93533 98181</p>
+                <p style="color: white;">Write a mail</p>
+                <p class="contact-info">info@mywinmarg.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Grievance Cell</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Compliance Documents</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p style="color: white;">Shop No 1, 3rd Floor, Nithin Complex Sapthagiri Circle, Anantapur Andhra
+                    Pradesh - 515 001</p>
+                <h3>Subscribe to our newsletter</h3>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="Please enter your mail ID" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook_icon.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter_icon.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="instagram_icon.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                </div>
+                <h3>Mobile App</h3>
+                <div class="mobile-app-links">
+                    <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                    <a href="#"><img src="appstore.png" alt="App Store"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 WINMARG BUSINESS PRIVATE LIMITED</p>
+    </div>
+
+
+</body>
+
+</html>
